@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cofee Shop</title>
+    <link rel="stylesheet" href="styles/min.css" />
+    <link rel="icon" href="images/fav-icon.png" type="image /png" />
+  </head>
+  <body class="font-Dana">
+    <!-- all app icon -->
+    <svg class="hidden">
+      <symbol
+        id="shopping-cart"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+      </symbol>
+      <symbol
+        id="moon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+      </symbol>
+      <symbol
+        id="sun"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+      </symbol>
+      <symbol
+        id="arrow-left-end-on-rectangle"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+      </symbol>
+    </svg>
+    <header
+      class="flex items-center w-[90%] h-24 pl-4 pr-10 py-5 mx-auto rounded-3xl bg-black/50">
+      <div class="flex justify-between w-full">
+        <!-- logo&menu -->
+        <nav class="flex gap-x-9">
+          <!-- logo -->
+          <div>
+            <img src="images/app-logo.png" alt="Golden Coffe" />
+          </div>
+          <!-- menu -->
+          <ul class="flex gap-x-9">
+            <li>
+              <a href="#">صفحه اصلی</a>
+            </li>
+            <!-- has sub -->
+            <li>
+              <a href="#">فروشگاه </a>
+              <!-- subMenu -->
+              <ul class="hidden">
+                <li><a href="#">قهوه ویژه</a></li>
+                <li><a href="#">ویژه در سطح جهانی</a></li>
+                <li><a href="#">قهوه درجه یک</a></li>
+                <li><a href="#">ترکیبات تجاری</a></li>
+                <li><a href="#">کپسول قهوه</a></li>
+                <li><a href="#">قهوه زینو برزیلی</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">دیکشنری</a>
+            </li>
+            <li>
+              <a href="#">بلاگ</a>
+            </li>
+            <li>
+              <a href="#">درباره ما</a>
+            </li>
+            <li>
+              <a href="#">تماس با ما</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- cart& theme toggel & login link -->
+        <div class="flex">
+          <!-- cart icon & theme switch btn-->
+          <div class="flex gap-x-5">
+            <!-- cart -->
+            <div>
+              <svg class="size-9">
+                <use href="#shopping-cart"></use>
+              </svg>
+            </div>
+            <!-- theme switch btn -->
+            <div>
+              <svg class="size-9">
+                <use href="#moon"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- login link -->
+          <a href="#" class="flex">
+            <svg class="size-9">
+              <use href="#arrow-left-end-on-rectangle"></use>
+            </svg>
+            ورود | ثبت نام
+          </a>
+        </div>
+      </div>
+    </header>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
