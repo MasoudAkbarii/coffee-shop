@@ -54,7 +54,7 @@
   --font-MorabbaMedium: "Morabba Medium";
   --font-MorabbaBold: "Morabba Bold";
   /* letterspacing */
-  --tracking-tightest: "-0.065em";
+  --tracking-tightest: -0.065em;
   /* breakpoint */
   --breakpoint-xs: 480px;
 }
@@ -68,4 +68,8 @@
   .bg-home-desktop {
     background-image: url();
   }
+}
+body{
+  background-image: url("../images/headerBgDesktop.png");
+  background-repeat: no-repeat;
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/min.css" />
     <link rel="icon" href="images/fav-icon.png" type="image /png" />
   </head>
-  <body class="font-Dana">
+  <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
     <!-- all app icon -->
     <svg class="hidden">
       <symbol
@@ -60,17 +60,17 @@
       </symbol>
     </svg>
     <header
-      class="flex items-center w-[90%] h-24 pl-4 pr-10 py-5 mx-auto rounded-3xl bg-black/50">
-      <div class="flex justify-between w-full">
+      class="fixed top-9 left-0 right-0 flex items-center w-[90%] h-24 px-10 py-5 mx-auto rounded-3xl bg-black/50 backdrop-blur-[6px]">
+      <div class="flex justify-between items-center w-full">
         <!-- logo&menu -->
-        <nav class="flex gap-x-9">
+        <nav class="flex items-center gap-x-9">
           <!-- logo -->
           <div>
             <img src="images/app-logo.png" alt="Golden Coffe" />
           </div>
           <!-- menu -->
-          <ul class="flex gap-x-9">
-            <li>
+          <ul class="flex gap-x-9 text-gray-300 text-xl tracking-tightest">
+            <li class="font-DanaMedium text-orange-200">
               <a href="#">صفحه اصلی</a>
             </li>
             <!-- has sub -->
@@ -101,28 +101,30 @@
           </ul>
         </nav>
         <!-- cart& theme toggel & login link -->
-        <div class="flex">
+        <div class="flex gap-x-10 text-xl text-orange-200">
           <!-- cart icon & theme switch btn-->
-          <div class="flex gap-x-5">
+          <div class="flex items-center gap-x-5">
             <!-- cart -->
             <div>
-              <svg class="size-9">
+              <svg class="size-8">
                 <use href="#shopping-cart"></use>
               </svg>
             </div>
             <!-- theme switch btn -->
             <div>
-              <svg class="size-9">
+              <svg class="size-8">
                 <use href="#moon"></use>
               </svg>
             </div>
           </div>
+          <!-- divid border -->
+          <span class="block w-px h-14 bg-white/20"></span>
           <!-- login link -->
-          <a href="#" class="flex">
-            <svg class="size-9">
+          <a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
+            <svg class="size-8 rotate-180">
               <use href="#arrow-left-end-on-rectangle"></use>
             </svg>
-            ورود | ثبت نام
+            <span>ورود | ثبت‌نام </span>
           </a>
         </div>
       </div>
