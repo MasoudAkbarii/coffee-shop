@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cofee Shop</title>
-    <link rel="icon" href="images/fav-icon.png" type="image /png" />
+    <link
+      rel="icon"
+      href="images/fav-icon.png?v=2"
+      type="image/png"
+      sizes="48x48" />
     <link rel="stylesheet" href="styles/min.css" />
     <script type="text/javascript">
       document.documentElement.classList.toggle(
@@ -66,6 +70,18 @@
           stroke-linejoin="round"
           d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
       </symbol>
+      <symbol
+        id="chevron-left"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5 8.25 12l7.5-7.5" />
+      </symbol>
     </svg>
     <header
       class="fixed top-9 left-0 right-0 flex items-center w-[90%] h-24 px-10 py-5 mx-auto rounded-3xl bg-black/50 backdrop-blur-[6px]">
@@ -117,15 +133,97 @@
           <!-- cart icon & theme switch btn-->
           <div class="flex items-center gap-x-5">
             <!-- cart -->
-            <div>
+            <div class="relative group">
               <!-- cart icon hover -->
-              <div class="py-3">
+              <div class="py-3 cursor-pointer">
                 <svg class="size-8">
                   <use xlink:href="#shopping-cart"></use>
                 </svg>
               </div>
               <!-- cart box -->
-              <div></div>
+              <div
+                class="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible w-[400px] p-5 bg-white dark:bg-zinc-700 rounded-2xl border-t-3 border-orange-300 shadow-normal transition-all">
+                <!-- cart header -->
+                <div
+                  class="flex items-center justify-between text-xs font-DanaMedium tracking-tighter">
+                  <span class="text-gray-300">1مورد</span>
+                  <a href="#" class="flex items-center text-orange-300"
+                    >مشاهده سبد خرید
+                    <svg class="size-4">
+                      <use xlink:href="#chevron-left"></use>
+                    </svg>
+                  </a>
+                </div>
+                <!-- cart body -->
+                <div class="pb-1 border-b border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 *:py-5">
+                  <div
+                    class="flex gap-x-2.5 ">
+                    <img
+                      src="images/products/p2.png"
+                      class="size-30"
+                      alt=" product 2" />
+                    <div class="flex flex-col justify-between">
+                      <h4
+                        class="font-DanaMedium text-zinc-700 dark:text-white text-base tracking-normal">
+                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                      </h4>
+                      <div>
+                        <span
+                          class="font-DanaMedium text-xs text-teal-600 dark:text-emerald-500 tracking-tighter"
+                          >14.500 تومان تخفیف</span
+                        >
+                        <div
+                          class="font-DanaDemiBold text-zinc-700 dark:text-white">
+                          175,000
+                          <span class="font-Dana text-sm">تومان</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex gap-x-2.5 ">
+                    <img
+                      src="images/products/p1.png"
+                      class="size-30"
+                      alt=" product 2" />
+                    <div class="flex flex-col justify-between">
+                      <h4
+                        class="font-DanaMedium text-zinc-700 dark:text-white text-base tracking-normal">
+                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                      </h4>
+                      <div>
+                        <span
+                          class="font-DanaMedium text-xs text-teal-600 dark:text-emerald-500 tracking-tighter"
+                          >14.500 تومان تخفیف</span
+                        >
+                        <div
+                          class="font-DanaDemiBold text-zinc-700 dark:text-white">
+                          175,000
+                          <span class="font-Dana text-sm">تومان</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- cart footer -->
+                <div class="flex justify-between mt-5">
+                  <div>
+                    <span
+                      class="font-DanaMedium text-xs text-gray-300 tracking-tighter"
+                      >مبلغ قابل پرداخت</span
+                    >
+                    <div
+                      class="font-DanaDemiBold text-xl text-zinc-700 dark:text-white">
+                      350,000
+                      <span class="font-Dana text-sm">تومان</span>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-center w-36 h-14 bg-teal-600 hover:bg-teal-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 text-white rounded-xl cursor-pointer transition-all">
+                    ثبت سفارش
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- theme switch btn -->
             <div class="cursor-pointer" id="toggle-theme">
