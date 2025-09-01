@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cofee Shop</title>
-    <link rel="stylesheet" href="styles/min.css" />
     <link rel="icon" href="images/fav-icon.png" type="image /png" />
+    <link rel="stylesheet" href="styles/min.css" />
+    <script type="text/javascript">
+      document.documentElement.classList.toggle(
+        "dark",
+        localStorage.theme === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+      );
+    </script>
   </head>
   <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
     <!-- all app icon -->
@@ -63,28 +71,32 @@
       class="fixed top-9 left-0 right-0 flex items-center w-[90%] h-24 px-10 py-5 mx-auto rounded-3xl bg-black/50 backdrop-blur-[6px]">
       <div class="flex justify-between items-center w-full">
         <!-- logo&menu -->
-        <nav class="flex items-center gap-x-9">
+        <nav class="flex items-center gap-x-9 h-14">
           <!-- logo -->
           <div>
             <img src="images/app-logo.png" alt="Golden Coffe" />
           </div>
           <!-- menu -->
-          <ul class="flex gap-x-9 text-gray-300 text-xl tracking-tightest">
+          <ul
+            class="flex gap-x-9 h-full text-xl text-gray-300 tracking-tightest *:leading-[56px]">
             <li class="font-DanaMedium text-orange-200">
               <a href="#">صفحه اصلی</a>
             </li>
             <!-- has sub -->
-            <li>
-              <a href="#">فروشگاه </a>
+            <li class="relative group">
+              <a href="#" class="group-hover:text-orange-300 transition-all"
+                >فروشگاه
+              </a>
               <!-- subMenu -->
-              <ul class="hidden">
-                <li><a href="#">قهوه ویژه</a></li>
-                <li><a href="#">ویژه در سطح جهانی</a></li>
-                <li><a href="#">قهوه درجه یک</a></li>
-                <li><a href="#">ترکیبات تجاری</a></li>
-                <li><a href="#">کپسول قهوه</a></li>
-                <li><a href="#">قهوه زینو برزیلی</a></li>
-              </ul>
+              <div
+                class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible w-52 p-6 space-y-4 text-base tracking-normal text-zinc-700 dark:text-white bg-white dark:bg-zinc-700 rounded-2xl border-t-3 border-orange-300 shadow-normal transition-all **:inline-block **:transition-colors **:hover:text-orange-300">
+                <a href="#">قهوه ویژه</a>
+                <a href="#">ویژه در سطح جهانی</a>
+                <a href="#">قهوه درجه یک</a>
+                <a href="#">ترکیبات تجاری</a>
+                <a href="#">کپسول قهوه</a>
+                <a href="#">قهوه زینو برزیلی</a>
+              </div>
             </li>
             <li>
               <a href="#">دیکشنری</a>
@@ -106,14 +118,22 @@
           <div class="flex items-center gap-x-5">
             <!-- cart -->
             <div>
-              <svg class="size-8">
-                <use href="#shopping-cart"></use>
-              </svg>
+              <!-- cart icon hover -->
+              <div class="py-3">
+                <svg class="size-8">
+                  <use xlink:href="#shopping-cart"></use>
+                </svg>
+              </div>
+              <!-- cart box -->
+              <div></div>
             </div>
             <!-- theme switch btn -->
-            <div>
-              <svg class="size-8">
-                <use href="#moon"></use>
+            <div class="cursor-pointer" id="toggle-theme">
+              <svg class="size-8 inline-block dark:hidden">
+                <use xlink:href="#moon"></use>
+              </svg>
+              <svg class="size-8 hidden dark:inline-block">
+                <use xlink:href="#sun"></use>
               </svg>
             </div>
           </div>
@@ -122,7 +142,7 @@
           <!-- login link -->
           <a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
             <svg class="size-8 rotate-180">
-              <use href="#arrow-left-end-on-rectangle"></use>
+              <use xlink:href="#arrow-left-end-on-rectangle"></use>
             </svg>
             <span>ورود | ثبت‌نام </span>
           </a>
