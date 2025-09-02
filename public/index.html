@@ -82,19 +82,31 @@
           stroke-linejoin="round"
           d="M15.75 19.5 8.25 12l7.5-7.5" />
       </symbol>
+      <symbol
+        id="user"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+      </symbol>
     </svg>
     <header
-      class="fixed top-9 left-0 right-0 flex items-center w-[90%] h-24 px-10 py-5 mx-auto rounded-3xl bg-black/50 backdrop-blur-[6px]">
+      class="fixed top-9 left-0 right-0 hidden md:flex items-center w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto rounded-3xl bg-black/50 backdrop-blur-[6px]">
       <div class="flex justify-between items-center w-full">
         <!-- logo&menu -->
-        <nav class="flex items-center gap-x-9 h-14">
+        <nav class="flex items-center gap-x-6 lg:gap-x-9 h-14">
           <!-- logo -->
-          <div>
+          <div class="shrink-0 size-14">
             <img src="images/app-logo.png" alt="Golden Coffe" />
           </div>
           <!-- menu -->
           <ul
-            class="flex gap-x-9 h-full text-xl text-gray-300 tracking-tightest *:leading-[56px]">
+            class="flex gap-x-3 lg:gap-x-9 h-full text-xl text-gray-300 tracking-tightest *:leading-[56px]">
             <li class="font-DanaMedium text-orange-200">
               <a href="#">صفحه اصلی</a>
             </li>
@@ -105,7 +117,7 @@
               </a>
               <!-- subMenu -->
               <div
-                class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible w-52 p-6 space-y-4 text-base tracking-normal text-zinc-700 dark:text-white bg-white dark:bg-zinc-700 rounded-2xl border-t-3 border-orange-300 shadow-normal transition-all **:inline-block **:transition-colors **:hover:text-orange-300">
+                class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible w-52 p-6 space-y-4 text-base tracking-normal text-zinc-700 dark:text-white bg-white dark:bg-zinc-700 rounded-2xl border-t-3 border-orange-300 shadow-normal transition-all delay-75 **:inline-block **:transition-colors **:hover:text-orange-300">
                 <a href="#">قهوه ویژه</a>
                 <a href="#">ویژه در سطح جهانی</a>
                 <a href="#">قهوه درجه یک</a>
@@ -129,9 +141,10 @@
           </ul>
         </nav>
         <!-- cart& theme toggel & login link -->
-        <div class="flex gap-x-10 text-xl text-orange-200">
+        <div
+          class="flex gap-x-4 lg:gap-x-5 xl:gap-x-10 text-xl text-orange-200">
           <!-- cart icon & theme switch btn-->
-          <div class="flex items-center gap-x-5">
+          <div class="flex items-center gap-x-4 lg:gap-x-5">
             <!-- cart -->
             <div class="relative group">
               <!-- cart icon hover -->
@@ -142,7 +155,7 @@
               </div>
               <!-- cart box -->
               <div
-                class="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible w-[400px] p-5 bg-white dark:bg-zinc-700 rounded-2xl border-t-3 border-orange-300 shadow-normal transition-all">
+                class="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible w-[400px] p-5 bg-white dark:bg-zinc-700 rounded-2xl border-t-3 border-orange-300 shadow-normal transition-all delay-75">
                 <!-- cart header -->
                 <div
                   class="flex items-center justify-between text-xs font-DanaMedium tracking-tighter">
@@ -155,16 +168,16 @@
                   </a>
                 </div>
                 <!-- cart body -->
-                <div class="pb-1 border-b border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 *:py-5">
-                  <div
-                    class="flex gap-x-2.5 ">
+                <div
+                  class="max-h-[250px] overflow-auto pb-1 border-b border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 *:py-5">
+                  <div class="flex gap-x-2.5">
                     <img
                       src="images/products/p2.png"
                       class="size-30"
                       alt=" product 2" />
                     <div class="flex flex-col justify-between">
                       <h4
-                        class="font-DanaMedium text-zinc-700 dark:text-white text-base tracking-normal">
+                        class="font-DanaMedium text-zinc-700 dark:text-white text-base tracking-normal line-clamp-2">
                         قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
                       </h4>
                       <div>
@@ -180,15 +193,60 @@
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="flex gap-x-2.5 ">
+                  <div class="flex gap-x-2.5">
                     <img
                       src="images/products/p1.png"
                       class="size-30"
                       alt=" product 2" />
                     <div class="flex flex-col justify-between">
                       <h4
-                        class="font-DanaMedium text-zinc-700 dark:text-white text-base tracking-normal">
+                        class="font-DanaMedium text-zinc-700 dark:text-white text-base tracking-normal line-clamp-2">
+                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                      </h4>
+                      <div>
+                        <span
+                          class="font-DanaMedium text-xs text-teal-600 dark:text-emerald-500 tracking-tighter"
+                          >14.500 تومان تخفیف</span
+                        >
+                        <div
+                          class="font-DanaDemiBold text-zinc-700 dark:text-white">
+                          175,000
+                          <span class="font-Dana text-sm">تومان</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-2.5">
+                    <img
+                      src="images/products/p3.png"
+                      class="size-30"
+                      alt=" product 2" />
+                    <div class="flex flex-col justify-between">
+                      <h4
+                        class="font-DanaMedium text-zinc-700 dark:text-white text-base tracking-normal line-clamp-2">
+                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                      </h4>
+                      <div>
+                        <span
+                          class="font-DanaMedium text-xs text-teal-600 dark:text-emerald-500 tracking-tighter"
+                          >14.500 تومان تخفیف</span
+                        >
+                        <div
+                          class="font-DanaDemiBold text-zinc-700 dark:text-white">
+                          175,000
+                          <span class="font-Dana text-sm">تومان</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-2.5">
+                    <img
+                      src="images/products/p4.png"
+                      class="size-30"
+                      alt=" product 2" />
+                    <div class="flex flex-col justify-between">
+                      <h4
+                        class="font-DanaMedium text-zinc-700 dark:text-white text-base tracking-normal line-clamp-2">
                         قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
                       </h4>
                       <div>
@@ -219,7 +277,7 @@
                     </div>
                   </div>
                   <div
-                    class="flex items-center justify-center w-36 h-14 bg-teal-600 hover:bg-teal-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 text-white rounded-xl cursor-pointer transition-all">
+                    class="flex items-center justify-center w-36 h-14 bg-teal-600 hover:bg-teal-700 dark:bg-emerald-500 dark:hover:bg-emerald-600 text-white rounded-xl cursor-pointer tracking-tightest transition-all">
                     ثبت سفارش
                   </div>
                 </div>
@@ -238,12 +296,26 @@
           <!-- divid border -->
           <span class="block w-px h-14 bg-white/20"></span>
           <!-- login link -->
-          <a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
-            <svg class="size-8 rotate-180">
-              <use xlink:href="#arrow-left-end-on-rectangle"></use>
-            </svg>
-            <span>ورود | ثبت‌نام </span>
-          </a>
+          <div class="flex gap-x-4">
+            <!-- sign up -->
+            <a
+              href="#"
+              class="flex items-center gap-x-2.5 text-xl tracking-tightest transition-all">
+              <svg class="size-8 rotate-180">
+                <use xlink:href="#arrow-left-end-on-rectangle"></use>
+              </svg>
+              <span class="hidden xl:inline-block">ورود | ثبت‌نام </span>
+            </a>
+            <!-- profile -->
+            <!-- <a
+              href="#"
+              class="flex items-center gap-x-2.5 tracking-tightest">
+              <svg class="size-8">
+                <use xlink:href="#user"></use>
+              </svg>
+              <span>حساب کاربری</span>
+            </a> -->
+          </div>
         </div>
       </div>
     </header>
