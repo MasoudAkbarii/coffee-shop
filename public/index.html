@@ -492,6 +492,7 @@
         </div>
       </div>
     </header>
+    <!-- mobile hedear bg -->
     <div class="flex md:hidden items-center justify-between bg-white dark:bg-zinc-700 h-16 p-4">
       <!-- nav icon -->
       <div class="nav-icon">
@@ -501,7 +502,7 @@
       </div>
       <!-- nav -->
       <div
-        class="nav fixed -right-64 bottom-0 top-0 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20 transition-all"
+        class="nav fixed -right-64 bottom-0 top-0 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20 overflow-auto transition-all"
       >
         <!-- nav header -->
         <div
@@ -515,9 +516,11 @@
               <use xlink:href="#logo-type"></use>
             </svg>
           </div>
-          <svg class="size-5 text-zinc-600 dark:text-white">
-            <use xlink:href="#x-mark"></use>
-          </svg>
+          <div class="nav-clsoe-btn">
+            <svg class="size-5 text-zinc-600 dark:text-white">
+              <use xlink:href="#x-mark"></use>
+            </svg>
+          </div>
         </div>
         <!-- nav menu -->
         <div class="flex items-center h-10 pr-2.5 mb-4 bg-orange-200/20 text-orange-300 rounded-md">
@@ -589,7 +592,7 @@
         </ul>
         <!-- nav footer -->
         <div
-          class="flex flex-col gap-6 items-start text-orange-300 pt-8 px-2.5 mt-6 border-t border-t-gray-100 dark:border-t-white/10"
+          class="flex flex-col gap-6 items-start text-orange-300 py-8 px-2.5 mt-6 border-t border-t-gray-100 dark:border-t-white/10"
         >
           <a href="#" class="inline-flex items-center gap-x-2">
             <svg class="size-5 rotate-180">
@@ -626,13 +629,209 @@
         </svg>
       </div>
       <!-- cart icon -->
-      <div>
+      <div class="cart-icon">
         <svg class="size-6 text-zinc-700 dark:text-white">
           <use xlink:href="#shopping-cart"></use>
         </svg>
       </div>
+      <!-- cart -->
+      <div
+        class="fixed -left-64 bottom-0 top-0 flex flex-col w-64 min-h-screen pt-5 px-4 bg-white dark:bg-zinc-700 z-20 transition-all"
+      >
+        <!-- cart header -->
+        <div
+          class="flex items-center justify-between pb-5 mb-5 border-b border-b-gray-300 dark:border-b-white/10"
+        >
+          <div class="cart-clsoe-btn">
+            <svg class="size-5 text-zinc-600 dark:text-white">
+              <use xlink:href="#x-mark"></use>
+            </svg>
+          </div>
+          <span class="text-zinc-700 dark:text-white font-DanaMedium">سبد خرید</span>
+        </div>
+        <!-- cart body -->
+
+        <div class="*:pb-5 *:mb-5 overflow-auto">
+          <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-white/10">
+            <img src="images/products/p2.png" class="size-[90px]" alt=" product 2" />
+            <div class="flex flex-col gap-y-1.5 justify-between">
+              <h4
+                class="font-DanaMedium text-zinc-700 dark:text-white text-sm tracking-normal line-clamp-2"
+              >
+                قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+              </h4>
+              <div>
+                <span
+                  class="font-DanaMedium text-xs text-teal-600 dark:text-emerald-500 tracking-tighter"
+                  >14.500 تومان تخفیف</span
+                >
+                <div class="font-DanaDemiBold text-zinc-700 dark:text-white">
+                  175,000
+                  <span class="font-Dana text-xs">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-white/10">
+            <img src="images/products/p1.png" class="size-[90px]" alt=" product 1" />
+            <div class="flex flex-col gap-y-1.5 justify-between">
+              <h4
+                class="font-DanaMedium text-zinc-700 dark:text-white text-sm tracking-normal line-clamp-2"
+              >
+                قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+              </h4>
+              <div>
+                <span
+                  class="font-DanaMedium text-xs text-teal-600 dark:text-emerald-500 tracking-tighter"
+                  >14.500 تومان تخفیف</span
+                >
+                <div class="font-DanaDemiBold text-zinc-700 dark:text-white">
+                  175,000
+                  <span class="font-Dana text-xs">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-white/10">
+            <img src="images/products/p4.png" class="size-[90px]" alt=" product 4" />
+            <div class="flex flex-col gap-y-1.5 justify-between">
+              <h4
+                class="font-DanaMedium text-zinc-700 dark:text-white text-sm tracking-normal line-clamp-2"
+              >
+                قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+              </h4>
+              <div>
+                <span
+                  class="font-DanaMedium text-xs text-teal-600 dark:text-emerald-500 tracking-tighter"
+                  >14.500 تومان تخفیف</span
+                >
+                <div class="font-DanaDemiBold text-zinc-700 dark:text-white">
+                  175,000
+                  <span class="font-Dana text-xs">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-white/10">
+            <img src="images/products/p4.png" class="size-[90px]" alt=" product 4" />
+            <div class="flex flex-col gap-y-1.5 justify-between">
+              <h4
+                class="font-DanaMedium text-zinc-700 dark:text-white text-sm tracking-normal line-clamp-2"
+              >
+                قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+              </h4>
+              <div>
+                <span
+                  class="font-DanaMedium text-xs text-teal-600 dark:text-emerald-500 tracking-tighter"
+                  >14.500 تومان تخفیف</span
+                >
+                <div class="font-DanaDemiBold text-zinc-700 dark:text-white">
+                  175,000
+                  <span class="font-Dana text-xs">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-white/10">
+            <img src="images/products/p4.png" class="size-[90px]" alt=" product 4" />
+            <div class="flex flex-col gap-y-1.5 justify-between">
+              <h4
+                class="font-DanaMedium text-zinc-700 dark:text-white text-sm tracking-normal line-clamp-2"
+              >
+                قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+              </h4>
+              <div>
+                <span
+                  class="font-DanaMedium text-xs text-teal-600 dark:text-emerald-500 tracking-tighter"
+                  >14.500 تومان تخفیف</span
+                >
+                <div class="font-DanaDemiBold text-zinc-700 dark:text-white">
+                  175,000
+                  <span class="font-Dana text-xs">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-white/10">
+            <img src="images/products/p4.png" class="size-[90px]" alt=" product 4" />
+            <div class="flex flex-col gap-y-1.5 justify-between">
+              <h4
+                class="font-DanaMedium text-zinc-700 dark:text-white text-sm tracking-normal line-clamp-2"
+              >
+                قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+              </h4>
+              <div>
+                <span
+                  class="font-DanaMedium text-xs text-teal-600 dark:text-emerald-500 tracking-tighter"
+                  >14.500 تومان تخفیف</span
+                >
+                <div class="font-DanaDemiBold text-zinc-700 dark:text-white">
+                  175,000
+                  <span class="font-Dana text-xs">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-white/10">
+            <img src="images/products/p4.png" class="size-[90px]" alt=" product 4" />
+            <div class="flex flex-col gap-y-1.5 justify-between">
+              <h4
+                class="font-DanaMedium text-zinc-700 dark:text-white text-sm tracking-normal line-clamp-2"
+              >
+                قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+              </h4>
+              <div>
+                <span
+                  class="font-DanaMedium text-xs text-teal-600 dark:text-emerald-500 tracking-tighter"
+                  >14.500 تومان تخفیف</span
+                >
+                <div class="font-DanaDemiBold text-zinc-700 dark:text-white">
+                  175,000
+                  <span class="font-Dana text-xs">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-white/10">
+            <img src="images/products/p4.png" class="size-[90px]" alt=" product 4" />
+            <div class="flex flex-col gap-y-1.5 justify-between">
+              <h4
+                class="font-DanaMedium text-zinc-700 dark:text-white text-sm tracking-normal line-clamp-2"
+              >
+                قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+              </h4>
+              <div>
+                <span
+                  class="font-DanaMedium text-xs text-teal-600 dark:text-emerald-500 tracking-tighter"
+                  >14.500 تومان تخفیف</span
+                >
+                <div class="font-DanaDemiBold text-zinc-700 dark:text-white">
+                  175,000
+                  <span class="font-Dana text-xs">تومان</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cart footer -->
+        <div class="flex items-end gap-x-4 mt-auto mb-8">
+          <a
+            href="#"
+            class="flex items-center justify-center w-28 h-11 bg-teal-600 dark:bg-emerald-500 text-white rounded-xl"
+            >ثبت سفارش</a
+          >
+          <div>
+            <span class="font-DanaMedium text-xs text-gray-300 tracking-tighter"
+              >مبلغ قابل پرداخت</span
+            >
+            <div class="font-DanaDemiBold text-zinc-700 dark:text-white">
+              350,000 <span class="font-Dana text-xs">تومان</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="hidden overlay md:hidden fixed inset-0 w-full h-full bg-black/40 z-10"></div>
+    <div class="overlay "></div>
     <script src="scripts/app.js"></script>
   </body>
 </html>
