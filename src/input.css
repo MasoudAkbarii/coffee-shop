@@ -55,6 +55,7 @@
   --tracking-tightest: -0.065rem;
   /* breakpoint */
   --breakpoint-xs: 480px;
+  --breakpoint-2xl: initial;
 }
 @utility container {
   @apply mx-auto px-4 lg:px-2.5;
@@ -102,8 +103,8 @@
   .submenu {
     @apply hidden flex-col gap-y-3 pr-7 mt-3 text-zinc-600 dark:text-white text-sm;
   }
-  .submenu--open{
-    @apply flex
+  .submenu--open {
+    @apply flex;
   }
   .submenu__item--active {
     @apply relative text-orange-300 pr-2.5;
@@ -121,10 +122,10 @@
     bottom: 0;
     margin: auto;
   }
-  .overlay{
+  .overlay {
     @apply md:hidden invisible opacity-0 fixed inset-0 w-full h-full bg-black/40 z-10 transition-all;
   }
-  .overlay--visible{
+  .overlay--visible {
     @apply visible opacity-100;
   }
 }

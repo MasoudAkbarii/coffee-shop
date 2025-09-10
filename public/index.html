@@ -276,6 +276,7 @@
         />
       </symbol>
     </svg>
+    <!-- app header -->
     <!-- header , menu and mobile menu -->
     <header
       class="fixed top-9 left-0 right-0 hidden md:flex items-center w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto rounded-3xl bg-black/50 backdrop-blur-[6px]"
@@ -516,7 +517,7 @@
               <use xlink:href="#logo-type"></use>
             </svg>
           </div>
-          <div class="nav-clsoe-btn">
+          <div class="nav-close-btn">
             <svg class="size-5 text-zinc-600 dark:text-white">
               <use xlink:href="#x-mark"></use>
             </svg>
@@ -636,13 +637,13 @@
       </div>
       <!-- cart -->
       <div
-        class="fixed -left-64 bottom-0 top-0 flex flex-col w-64 min-h-screen pt-5 px-4 bg-white dark:bg-zinc-700 z-20 transition-all"
+        class="cart fixed -left-64 bottom-0 top-0 flex flex-col w-64 min-h-screen pt-5 px-4 bg-white dark:bg-zinc-700 z-20 transition-all"
       >
         <!-- cart header -->
         <div
           class="flex items-center justify-between pb-5 mb-5 border-b border-b-gray-300 dark:border-b-white/10"
         >
-          <div class="cart-clsoe-btn">
+          <div class="cart-close-btn">
             <svg class="size-5 text-zinc-600 dark:text-white">
               <use xlink:href="#x-mark"></use>
             </svg>
@@ -831,7 +832,23 @@
         </div>
       </div>
     </div>
-    <div class="overlay "></div>
+    <!-- app main  -->
+    <main>
+      <section class="home">
+        <div class="container">
+          <div class="text-white">
+            <h2 class="font-MorabbaBold text-2xl md:text-6xl mb-2">قهوه عربیکا تانزانیا</h2>
+            <span class="font-MorabbaLight text-xl md:text-5xl mb-8">یک فنجان بالانس !</span>
+            <span class="block w-[100px] h-px md:h-0.5 bg-orange-300 mb-8"></span>
+            <p class="text-xs md:text-2xl">
+              قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف
+              کمربند قهوه کشت میشود.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="overlay"></div>
     <script src="scripts/app.js"></script>
   </body>
 </html>
