@@ -31,10 +31,6 @@
     src: url('../fonts/Morabba/woff2/Morabba-Bold.woff2') format('woff2');
     font-display: swap;
   }
-  body {
-    background-image: url('../images/headerBgDesktop.webp');
-    background-repeat: no-repeat;
-  }
 }
 @theme {
   /* colors */
@@ -44,6 +40,8 @@
   --color-Brown-900: #634832;
   /* boxShadow */
   --shadow-normal: 0 1px 10px rgba(0, 0, 0, 0.05);
+  /* radius */
+  --radius-4xl: 2rem
   /* fontfamliy */
   --font-Dana: 'Dana';
   --font-DanaMedium: 'Dana Medium';
@@ -61,12 +59,6 @@
   @apply mx-auto px-4 lg:px-2.5;
 }
 @layer utilities {
-  .bg-home-mobile {
-    background-image: url();
-  }
-  .bg-home-desktop {
-    background-image: url();
-  }
   .tracking-tightest {
     --tw-tracking: var(--tracking-tightest);
   }
@@ -128,4 +120,21 @@
   .overlay--visible {
     @apply visible opacity-100;
   }
+}
+
+
+.circle{
+  @apply flex items-center justify-center border rounded-full;
+}
+.circle--main{
+  @apply absolute bottom-0 left-0 right-0 mx-auto hidden md:flex;
+}
+.circle--lg{
+@apply w-[203px] h-[203px] border-white/25;
+}
+.circle--md{
+@apply w-[145px] h-[145px] border-white/50;
+}
+.circle--sm{
+@apply w-[95px] h-[95px] border-white/80;
 }

@@ -14,7 +14,7 @@
       );
     </script>
   </head>
-  <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
+  <body class="font-Dana bg-gray-100 dark:bg-zinc-800 h-[2000px]">
     <!-- all app icon -->
     <svg class="hidden">
       <symbol
@@ -275,11 +275,21 @@
           d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z"
         />
       </symbol>
+      <symbol
+      id="curve"
+        width="100"
+        height="22"
+        viewBox="0 0 100 22"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z">
+      </symbol>
     </svg>
     <!-- app header -->
     <!-- header , menu and mobile menu -->
     <header
-      class="fixed top-9 left-0 right-0 hidden md:flex items-center w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto rounded-3xl bg-black/50 backdrop-blur-[6px]"
+      class="fixed top-9 left-0 right-0 hidden z-50 md:flex items-center w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto rounded-3xl bg-black/50 backdrop-blur-[6px]"
     >
       <div class="flex justify-between items-center w-full">
         <!-- logo&menu -->
@@ -834,18 +844,40 @@
     </div>
     <!-- app main  -->
     <main>
-      <section class="home">
-        <div class="container">
+      <section
+        class="home relative h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-[url(../images/headerBgMobile.webp)] md:bg-[url(../images/headerBgDesktop.webp)] bg-no-repeat bg-cover bg-[center_top]"
+      >
+        <div class="container overflow-y-hidden relative h-full md:min-h-screen flex justify-end items-center">
           <div class="text-white">
-            <h2 class="font-MorabbaBold text-2xl md:text-6xl mb-2">قهوه عربیکا تانزانیا</h2>
-            <span class="font-MorabbaLight text-xl md:text-5xl mb-8">یک فنجان بالانس !</span>
-            <span class="block w-[100px] h-px md:h-0.5 bg-orange-300 mb-8"></span>
-            <p class="text-xs md:text-2xl">
-              قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف
-              کمربند قهوه کشت میشود.
+            <h2 class="font-MorabbaBold text-2xl md:text-6xl/[62px] mb-0.5 md:mb-2">
+              قهوه عربیکا تانزانیا
+            </h2>
+            <span class="font-MorabbaLight text-xl md:text-5xl/[64px]">یک فنجان بالانس !</span>
+            <span class="block w-[100px] h-px md:h-0.5 bg-orange-300 my-3 md:my-8"></span>
+            <p class="max-w-[201px] md:max-w-[480px] text-xs md:text-2xl/[32px]">
+                قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.
             </p>
           </div>
+        <!-- circle -->
+        <div class="circle circle--lg circle--main translate-y-2/4">
+          <div class="circle circle--md">
+            <div class="circle circle--sm">
+            </div>
+          </div>
         </div>
+        </div>
+        <!-- curve -->
+        <svg class="absolute bottom-0 left-0 right-0 hidden md:block mx-auto text-gray-100 dark:text-zinc-800 w-[100px] h-[22px]">
+          <use xlink:href="#curve"></use>
+        </svg>
+        <!-- aroow circle -->
+         <div class="flex items-center circle--main justify-center size-[30px] border-2 rounded-full border-orange-300 translate-y-2/4">
+            <svg class="size-5 text-zinc-700 dark:text-white">
+              <use xlink:href="#chevron-down"></use>
+            </svg>
+         </div>
+
+
       </section>
     </main>
     <div class="overlay"></div>
