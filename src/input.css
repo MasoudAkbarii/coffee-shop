@@ -120,7 +120,7 @@
   .overlay--visible {
     @apply visible opacity-100;
   }
-}
+
 
 
 .circle{
@@ -137,4 +137,30 @@
 }
 .circle--sm{
 @apply w-[95px] h-[95px] border-white/80;
+}
+@media screen and (min-width:1280px) {
+ html.dark .product{
+  background-image: url('../images/body-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+.product{
+  background: linear-gradient(rgba(243, 244, 246,0.65),rgba(243, 244, 246,0.65)), url('../images/body-bg.png');
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+} 
+}
+
+.section--title{
+  @apply font-MorabbaMedium text-zinc-700 dark:text-white text-2xl md:text-5xl;
+}
+.section--subtitle{
+  @apply inline-block mt-0.5 md:mt-1.5 font-MorabbaLight text-zinc-700 dark:text-white text-lg md:text-3xl;
+}
+.section--link{
+  @apply flex items-center md:gap-x-1 h-10 pr-3 pl-1 rounded-md text-orange-300 md:text-xl tracking-tightest md:hover:bg-orange-300/20 transition-colors;
+}
 }
