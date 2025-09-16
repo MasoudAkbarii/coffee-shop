@@ -54,6 +54,9 @@
   /* breakpoint */
   --breakpoint-xs: 480px;
   --breakpoint-2xl: initial;
+  /* spacing */
+  --spacing-25: 6.25rem;
+  --spacing-50: 12.5rem;
 }
 @utility container {
   @apply mx-auto px-4 lg:px-2.5;
