@@ -393,6 +393,10 @@
           fill="#059669"
         />
       </symbol>
+        <symbol id="arrow-left-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M17 10a.75.75 0 0 1-.75.75H5.612l4.158 3.96a.75.75 0 1 1-1.04 1.08l-5.5-5.25a.75.75 0 0 1 0-1.08l5.5-5.25a.75.75 0 1 1 1.04 1.08L5.612 9.25H16.25A.75.75 0 0 1 17 10Z" clip-rule="evenodd" />
+        </symbol>
+
     </svg>
     <!-- app header -->
     <!-- header , menu and mobile menu -->
@@ -1042,7 +1046,7 @@
               <div class="flex justify-between items-center mt-2.5 md:mt-4">
                 <div class="flex items-center gap-x-2.5 md:gap-x-3 text-gray-400">
                   <span
-                    class="flex-center w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 dark:bg-zinc-800 rounded-full md:hover:bg-teal-600 md:hover:text-white md:hover:dark:bg-emerald-500 md:cursor-pointer transition-all"
+                    class="flex-center  w-[26px] h-[26px] md:w-9 md:h-9 bg-gray-100 dark:bg-zinc-800 rounded-full md:hover:bg-teal-600 md:hover:text-white md:hover:dark:bg-emerald-500 md:cursor-pointer transition-all"
                   >
                     <svg class="size-4 md:size-[22px]">
                       <use xlink:href="#shopping-cart"></use>
@@ -1571,8 +1575,8 @@
           <!-- best selling section head -->
           <div class="flex items-end justify-between mb-5 md:mb-12">
             <div>
-              <h3 class="section--title">جدیدترین محصولات</h3>
-              <span class="section--subtitle">فرآوری شده از دانه قهوه</span>
+              <h3 class="section--title">محصولات پر فروش</h3>
+              <span class="section--subtitle">پیشنهاد قهوه خور ها ...</span>
             </div>
             <div class="flex gap-x-3 md:gap-x-[18px]">
               <div class="swiper-button-prev-custom">
@@ -2085,14 +2089,18 @@
           </div>
         </div>
       </section>
-      <section class="coffee-club mb-20">
+      <section class="coffee-club mb-8 md:mb-20">
         <div class="container">
           <div
             class="flex items-center flex-wrap lg:flex-nowrap gap-0 lg:gap-x-4 xl:gap-x-24 gap-y-9 lg:h-36 rounded-2xl shadow-normal text-white bg-linear-to-r from-emerald-500 to-emerald-600 py-8 lg:py-0 px-3 lg:px-5 xl:px-11"
           >
             <div class="flex items-center md:shrink-0 gap-x-3 md:gap-x-6">
               <div>
-                <img src="images/club/diamond.png" class="w-[87px] lg:w-[100px] xl:w-[110px]" alt="" />
+                <img
+                  src="images/club/diamond.png"
+                  class="w-[87px] lg:w-[100px] xl:w-[110px]"
+                  alt=""
+                />
               </div>
               <div>
                 <h4 class="font-MorabbaBold text-2xl md:text-5xl mb-0.5 md:mb-2">کافی کلاب</h4>
@@ -2101,7 +2109,7 @@
                 </p>
               </div>
             </div>
-            <div class=" flex justify-between w-full ">
+            <div class="flex justify-between w-full">
               <div class="flex gap-x-2 lg:gap-x-3 xl:gap-x-5">
                 <div
                   class="size-[65px] sm:size-[72px] md:size-[98px] text-center py-1.5 md:pt-5 md:pb-1 bg-white text-emerald-600 rounded-2xl"
@@ -2142,6 +2150,146 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="blog mb-8 md:mb-20">
+        <div class="container">
+          <!-- blog seection head -->
+          <div class="flex items-end justify-between mb-5 md:mb-12">
+            <div>
+              <h3 class="section--title">جدیدترین محصولات</h3>
+            </div>
+            <a href="#" class="section--link">
+              <span class="hidden md:inline-block">مشاهده همه مطالب</span>
+              <span class="inline-block md:hidden">مشاهده همه</span>
+              <svg class="size-5">
+                <use xlink:href="#chevron-left-mini"></use>
+              </svg>
+            </a>
+          </div>
+          <!-- blog section content -->
+           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 md:gap-5">
+              <div class="group flex gap-x-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl">
+                <div class="relative w-[130px] h-[130px] shrink-0 sm:w-auto sm:h-auto rounded-2xl rounded-bl-4xl sm:mb-4 overflow-hidden">
+                  <img src="images/blogs/blog-1.png" class="h-full object-cover" alt="blog1">
+                  <div  class="absolute inset-0 w-full h-full hidden md:flex items-center justify-center invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-linear-to-r from-orange-200/80 to-orange-300/80 transition-all delay-75">
+                    <svg class="w-[138px] h-[54px] text-amber-900">
+                      <use xlink:href="#logo-type"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="w-full flex flex-col sm:flex-row items-start justify-between">
+                    <a href="#" class="inline-block font-DanaMedium text-sm/7 md:font-Dana md:text-lg max-w-[192px] ml-1.5 sm:ml-0 mt-2.5 sm:mt-0 text-zinc-700 dark:text-white line-clamp-2 ">طرز تهیه قهوه دمی با دستگاه اروپرس</a>
+                  <div class="hidden sm:flex sm:gap-x-2.5 md:gap-x-5">
+                    <span class="block w-px h-[61px] bg-gray-100 dark:bg-white/10"></span>
+                      <div class="flex flex-col ml-[18px] -mt-1 text-teal-600 dark:text-emerald-500 text-sm text-left ">
+                      <span class="font-DanaDemiBold text-2xl">21</span>
+                      <span>مرداد</span>
+                      <span>1404</span>
+                    </div>
+                  </div>
+                  <div class="flex items-end justify-between w-full sm:hidden border-t border-t-gray-100 dark:border-t-white/10 pt-[18px] mt-5 pb-1.5">
+                    <span class="text-teal-600 dark:text-emerald-500 text-xs">21 مرداد 1404</span>
+                        <a href="#" class="flex items-center justify-center gap-x-1 pr-2.5 pl-2 ml-1.5 pt-0.5 w-[69px] h-5 font-DanaMedium text-xs text-orange-300 bg-orange-200/20 rounded-md md:hidden">
+                          مطالعه
+                          <svg class="size-3.5">
+                          <use xlink:href="#arrow-left-mini"></use>
+                        </svg>
+                      </a>
+                  </div>
+                </div>
+              </div>
+                <div class="group flex gap-x-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl">
+                <div class="relative w-[130px] h-[130px] shrink-0 sm:w-auto sm:h-auto rounded-2xl rounded-bl-4xl sm:mb-4 overflow-hidden">
+                  <img src="images/blogs/blog-2.png" class="h-full object-cover" alt="blog2">
+                  <div  class="absolute inset-0 w-full h-full hidden md:flex items-center justify-center invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-linear-to-r from-orange-200/80 to-orange-300/80 transition-all delay-75">
+                    <svg class="w-[138px] h-[54px] text-amber-900">
+                      <use xlink:href="#logo-type"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="w-full flex flex-col sm:flex-row items-start justify-between ">
+                    <a href="#" class="inline-block font-DanaMedium text-sm/7 md:font-Dana md:text-lg max-w-[192px] ml-1.5 sm:ml-0 mt-2.5 sm:mt-0 text-zinc-700 dark:text-white line-clamp-2 ">یک نوشیدنی هیجان انگیز و پرکالری برای شروع روز</a>
+                  <div class="hidden sm:flex sm:gap-x-2.5 md:gap-x-5">
+                    <span class="block w-px h-[61px] bg-gray-100 dark:bg-white/10"></span>
+                      <div class="flex flex-col ml-[18px] -mt-1 text-teal-600 dark:text-emerald-500 text-sm text-left ">
+                      <span class="font-DanaDemiBold text-2xl">21</span>
+                      <span>مرداد</span>
+                      <span>1404</span>
+                    </div>
+                  </div>
+                  <div class="flex items-end justify-between w-full sm:hidden border-t border-t-gray-100 dark:border-t-white/10 pt-[18px] mt-5 pb-1.5">
+                    <span class="text-teal-600 dark:text-emerald-500 text-xs">21 مرداد 1404</span>
+                        <a href="#" class="flex items-center justify-center gap-x-1 pr-2.5 pl-2 ml-1.5 pt-0.5 w-[69px] h-5 font-DanaMedium text-xs text-orange-300 bg-orange-200/20 rounded-md md:hidden">
+                          مطالعه
+                          <svg class="size-3.5">
+                          <use xlink:href="#arrow-left-mini"></use>
+                        </svg>
+                      </a>
+                  </div>
+                </div>
+              </div>
+                <div class="group flex gap-x-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl">
+                <div class="relative w-[130px] h-[130px] shrink-0 sm:w-auto sm:h-auto rounded-2xl rounded-bl-4xl sm:mb-4 overflow-hidden">
+                  <img src="images/blogs/blog-3.png" class="h-full object-cover" alt="blog3">
+                  <div  class="absolute inset-0 w-full h-full hidden md:flex items-center justify-center invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-linear-to-r from-orange-200/80 to-orange-300/80 transition-all delay-75">
+                    <svg class="w-[138px] h-[54px] text-amber-900">
+                      <use xlink:href="#logo-type"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="w-full flex flex-col sm:flex-row items-start justify-between">
+                    <a href="#" class="inline-block font-DanaMedium text-sm/7 md:font-Dana md:text-lg max-w-[192px] ml-1.5 sm:ml-0 mt-2.5 sm:mt-0 text-zinc-700 dark:text-white line-clamp-2 ">طرز تهیه یک فنجان کافه زینو برزیلی</a>
+                  <div class="hidden sm:flex sm:gap-x-2.5 md:gap-x-5">
+                    <span class="block w-px h-[61px] bg-gray-100 dark:bg-white/10"></span>
+                      <div class="flex flex-col ml-[18px] -mt-1 text-teal-600 dark:text-emerald-500 text-sm text-left ">
+                      <span class="font-DanaDemiBold text-2xl">21</span>
+                      <span>مرداد</span>
+                      <span>1404</span>
+                    </div>
+                  </div>
+                  <div class="flex items-end justify-between w-full sm:hidden border-t border-t-gray-100 dark:border-t-white/10 pt-[18px] mt-5 pb-1.5">
+                    <span class="text-teal-600 dark:text-emerald-500 text-xs">21 مرداد 1404</span>
+                        <a href="#" class="flex items-center justify-center gap-x-1 pr-2.5 pl-2 ml-1.5 pt-0.5 w-[69px] h-5 font-DanaMedium text-xs text-orange-300 bg-orange-200/20 rounded-md md:hidden">
+                          مطالعه
+                          <svg class="size-3.5">
+                          <use xlink:href="#arrow-left-mini"></use>
+                        </svg>
+                      </a>
+                  </div>
+                </div>
+              </div>
+                <div class="group flex gap-x-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl">
+                <div class="relative w-[130px] h-[130px] shrink-0 sm:w-auto sm:h-auto rounded-2xl rounded-bl-4xl sm:mb-4 overflow-hidden">
+                  <img src="images/blogs/blog-4.png" class="h-full object-cover" alt="blog4">
+                  <div  class="absolute inset-0 w-full h-full hidden md:flex items-center justify-center invisible opacity-0 group-hover:opacity-100 group-hover:visible bg-linear-to-r from-orange-200/80 to-orange-300/80 transition-all delay-75">
+                    <svg class="w-[138px] h-[54px] text-amber-900">
+                      <use xlink:href="#logo-type"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="w-full flex flex-col sm:flex-row items-start justify-between">
+                    <a href="#" class="inline-block font-DanaMedium text-sm/7 md:font-Dana md:text-lg max-w-[192px] ml-1.5 sm:ml-0 mt-2.5 sm:mt-0 text-zinc-700 dark:text-white line-clamp-2 ">طرز تهیه قهوه دالگونا مناسب روز‌های کرونایی</a>
+                  <div class="hidden sm:flex sm:gap-x-2.5 md:gap-x-5">
+                    <span class="block w-px h-[61px] bg-gray-100 dark:bg-white/10"></span>
+                      <div class="flex flex-col ml-[18px] -mt-1 text-teal-600 dark:text-emerald-500 text-sm text-left ">
+                      <span class="font-DanaDemiBold text-2xl">21</span>
+                      <span>مرداد</span>
+                      <span>1404</span>
+                    </div>
+                  </div>
+                  <div class="flex items-end justify-between w-full sm:hidden border-t border-t-gray-100 dark:border-t-white/10 pt-[18px] mt-5 pb-1.5">
+                    <span class="text-teal-600 dark:text-emerald-500 text-xs">21 مرداد 1404</span>
+                        <a href="#" class="flex items-center justify-center gap-x-1 pr-2.5 pl-2 ml-1.5 pt-0.5 w-[69px] h-5 font-DanaMedium text-xs text-orange-300 bg-orange-200/20 rounded-md md:hidden">
+                          مطالعه
+                          <svg class="size-3.5">
+                          <use xlink:href="#arrow-left-mini"></use>
+                        </svg>
+                      </a>
+                  </div>
+                </div>
+              </div>
+           </div>
         </div>
       </section>
     </main>
