@@ -419,6 +419,12 @@
           d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
         />
       </symbol>
+      <symbol id="curve-footer" xmlns="http://www.w3.org/2000/svg" width="100" height="22" viewBox="0 0 100 22" fill="currentColor">
+      <path d="M50 22C31 22 19 -3.26655e-06 1.9233e-06 -3.02023e-06L100 -3.8147e-06C81.25 -5.45387e-06 69 22 50 22Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="chevron-up-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+       <path fill-rule="evenodd" d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+      </symbol>
     </svg>
     <!-- app header -->
     <!-- header , menu and mobile menu -->
@@ -2591,6 +2597,32 @@
         </div>
       </section>
     </main>
+    <!-- app footer -->
+<footer class="relative bg-zinc-700 py-8 md:pb-11 md:pt-[62px]">
+        <svg class="absolute top-0 left-0 right-0 hidden md:block mx-auto text-gray-100 dark:text-zinc-800 w-[100px] h-[22px]">
+          <use xlink:href="#curve-footer"></use>
+        </svg>
+        <div class="absolute top-0 hidden md:flex items-center circle--main justify-center size-[30px] border-2 rounded-full border-orange-300 -translate-y-2/4">
+          <svg class="size-5 text-zinc-700 dark:text-white">
+            <use xlink:href="#chevron-up-mini"></use>
+          </svg>
+        </div>
+        <div class="flex justify-between w-[98%] lg:w-[90%] px-4 lg:px-0 mx-auto h-[500px] text-gray-300 ">
+          <div>
+            <div class="inline-flex gap-x-5 mb-6 md:mb-4.5 text-gray-300 hover:text-orange-300 transition-all delay-75">
+            <svg class="w-[57px] h-[54px]">
+              <use xlink:href="#logo"></use>
+            </svg>
+            <svg class="w-[138px] h-[54px]">
+              <use xlink:href="#logo-type"></use>
+            </svg>
+          </div>
+            <p class="max-w-[606px] text-lg/7 md:text-xl/[48px]">ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق می‌کوشیم.</p>
+          </div>
+          
+        </div>
+</footer>
+
     <div class="overlay"></div>
     <script src="scripts/app.js"></script>
     <script src="scripts/swiper-bundle.min.js"></script>

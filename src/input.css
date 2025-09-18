@@ -55,6 +55,7 @@
   --breakpoint-xs: 480px;
   --breakpoint-2xl: initial;
   /* spacing */
+  --spacing-4.5: 1.125rem;
   --spacing-25: 6.25rem;
   --spacing-50: 12.5rem;
 }
